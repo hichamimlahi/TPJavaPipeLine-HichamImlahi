@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'maven' 
+    }
+
     stages {
         stage('Récupération du code') {
             steps {

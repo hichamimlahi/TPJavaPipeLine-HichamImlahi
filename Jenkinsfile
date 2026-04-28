@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Exécution de Maven...'
                 // Si Jenkins tourne sous Windows, utilisez 'bat' au lieu de 'sh'
-                bat 'mvn clean package'
+                sh 'mvn clean package'
             }
         }
 
